@@ -6,5 +6,6 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-#ini belajar dari tutorial
-Route::get('/login', fn() => view('auth.login'))->name('login');
+Route::get('/home', function () {
+    return view('home');
+});
